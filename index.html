@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <!-- Tab Image -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <!-- style sheet -->
+  <link rel="stylesheet" href="style/style.css">
+  
+  <!--My fonts  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+ 
+  <!-- Title -->
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+
+
+<body>
+
+  <!-- Rating state start -->
+  <div class="front__card">
+
+    <div class="star__image">
+      <img src="images/icon-star.svg" alt="icon-star" >
+    </div>
+
+    <div class="card__content">
+
+      <h1 class=" card__headings">How did we do?</h1>
+      <p class="card__para">
+        Please let us know how we did with your support request. All feedback is appreciated 
+        to help us improve our offering!
+      </p>
+      
+    </div>
+    
+    <div class="rating__nums">
+      
+      <button  onclick="select(1)" ondblclick="remove()" class="rating">1</button>
+      <button  onclick="select(2)" ondblclick="remove()" class="rating">2</button>
+      <button  onclick="select(3)" ondblclick="remove()" class="rating">3</button>
+      <button  onclick="select(4)" ondblclick="remove()" class="rating">4</button>
+      <button  onclick="select(5)" ondblclick="remove()" class="rating">5</button>
+      
+    </div>
+    <input type="submit" onclick="submitEntry()" class="submit__btn" value="SUBMIT">
+    
+  </div>
+
+
+
+  <!-- Rating state end -->
+
+  <!-- Thank you state start -->
+ 
+  <div class="thank-you__page" style="display:none;">
+
+    <img src="images/illustration-thank-you.svg" alt="Thankyou-image">
+    
+    <h3 class="rating__amount"> You selected 0 out of 5 </h3>
+    
+  
+    <h1 class="card__headings">Thank you!</h1>
+
+    <p class="thank-you__comment">
+      We appreciate you taking the time to give a rating. 
+      If you ever need more support, 
+      don’t hesitate to get in touch!
+    </p>
+  
+  </div> 
+
+  <!-- Thank you state end -->
+<!-- 
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+
+  <script src="script.js"></script>
+</body>
+</html>
