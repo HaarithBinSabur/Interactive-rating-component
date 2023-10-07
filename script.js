@@ -1,5 +1,5 @@
 const ratingSection = document.getElementsByClassName("rating");
-let results = document.getElementsByClassName("rating-amount")[0]; // Access the first element
+let results = document.getElementsByClassName("rating__amount")[0]; // Access the first element
 
 let finalResults = 0;
 
